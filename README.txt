@@ -15,7 +15,7 @@
 
 ```
 LingeeGitTest/
-├── README.md                      # 项目说明（本文件）
+├── README.txt                     # 项目说明（本文件）
 └── project-management-template.md # 项目管理模板
 ```
 
