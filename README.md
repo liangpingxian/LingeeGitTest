@@ -70,10 +70,12 @@ cd LingeeGitTest
 
 ## 贡献指南
 
-- 每次改动对应一个 Issue
-- 分支命名格式：`feature/<编号>-<描述>` 或 `fix/<编号>-<描述>`
-- 提交信息遵循 [Conventional Commits](https://www.conventionalcommits.org/) 规范
-- PR 合并前需至少一人 Review
+详见 [CONTRIBUTING.md](./CONTRIBUTING.md)，涵盖：
+
+- 开发环境准备与初始设置
+- Issue 认领与分支命名规范
+- Commit 信息规范（[Conventional Commits](https://www.conventionalcommits.org/)）
+- Pull Request 流程与审查要求
 
 ## License
 
