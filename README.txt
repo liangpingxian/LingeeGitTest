@@ -16,6 +16,8 @@
 ```
 LingeeGitTest/
 ├── README.txt                              # 项目说明（本文件）
+├── LICENSE                                 # MIT 许可证
+├── .gitignore                              # Git 忽略规则
 ├── CONTRIBUTING.md                         # 贡献指南
 ├── CHANGELOG.md                            # 版本变更历史
 ├── project-management-template.md          # 项目管理模板（标准版）
