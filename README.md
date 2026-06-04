@@ -65,12 +65,13 @@ git remote add upstream https://github.com/liangpingxian/LingeeGitTest.git
 
    ```bash
    git checkout -b feature/<issue-编号>-<简短描述>
+   # 或 fix/<issue-编号>-<简短描述>
    ```
 
 4. **完成开发后提交**
 
    ```bash
-   git add .
+   git add <changed-files>
    git commit -m "fix: resolve #<编号> <描述>"
    git push origin feature/<issue-编号>-<简短描述>
    ```
@@ -112,7 +113,8 @@ git remote add upstream https://github.com/liangpingxian/LingeeGitTest.git
 |------|------|
 | `gh issue list --state open` | 查看所有未关闭 Issue |
 | `gh issue edit <N> --add-assignee @me --add-label "in progress"` | 认领 Issue 并标记进行中 |
-| `git checkout -b feature/<N>-desc` | 创建功能分支 |
+| `git checkout -b feature/<N>-desc` 或 `fix/<N>-desc` | 创建功能/修复分支 |
+| `git add <changed-files>` | 暂存指定文件 |
 | `git commit -m "fix: resolve #N ..."` | 提交并关联 Issue |
 | `gh pr create --title "..."` | 创建 Pull Request |
 

@@ -4,6 +4,11 @@
 
 ## [Unreleased]
 
+### 修复
+
+- 修正 `README.md` 协作流程 Step 4 使用 `git add .` 与 CONTRIBUTING.md 不一致的问题，改为 `git add <changed-files>` 避免误提交无关文件
+- 补充 `README.md` 协作流程 Step 3 缺少的 `fix/` 分支命名示例，与 CONTRIBUTING.md 分支命名规范保持一致
+
 ## [2.2.0] - 2026-06-05
 
 ### 修复
