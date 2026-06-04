@@ -3,7 +3,6 @@ name: 功能请求
 about: 提出新功能或改进建议
 title: '[Feature] '
 labels: enhancement
-assignees: ''
 ---
 
 ## 功能描述

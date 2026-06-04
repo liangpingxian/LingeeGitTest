@@ -3,7 +3,6 @@ name: Bug 报告
 about: 报告项目中的问题
 title: '[Bug] '
 labels: bug
-assignees: ''
 ---
 
 ## 问题描述
