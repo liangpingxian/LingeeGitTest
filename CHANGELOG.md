@@ -6,6 +6,7 @@
 
 ### 修复
 
+- 修正 `README.md` 和 `CONTRIBUTING.md` 中 Issue 认领命令缺少 `--add-label "in progress"` 参数的问题，使文档与标准协作流程保持一致
 - 修正 `CONTRIBUTING.md` 问题反馈链接指向空白 Issue 表单，改为指向模板选择页面 `/issues/new/choose`，与项目 Issue 模板引导保持一致
 
 ## [1.8.0] - 2026-06-05
