@@ -4,6 +4,10 @@
 
 ## [Unreleased]
 
+### 修复
+
+- 修正 `README.md` 协作流程第 5 步 `gh pr create` 命令使用 `--body` 参数覆盖 PR 模板的问题，改为省略 `--body` 让 GitHub 自动加载模板
+
 ## [1.7.0] - 2026-06-04
 
 ### 修复
