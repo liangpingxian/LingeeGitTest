@@ -38,7 +38,7 @@ gh issue list --state open --search "no:assignee"
 gh issue edit <编号> --add-assignee @me
 ```
 
-> 若没有合适的 Issue，可以先创建一个，描述你打算做的改动，再认领它。
+> 若没有合适的 Issue，可以先创建一个，描述你打算做的改动，再认领它。项目提供了 Issue 模板（Bug 报告、功能请求），创建时请选择对应模板填写。
 
 ### 第二步：同步上游代码
 
@@ -80,18 +80,28 @@ git push origin feature/42-add-dark-mode
 
 ### 第五步：发起 Pull Request
 
+项目已配置 Pull Request 模板（`.github/pull_request_template.md`），创建 PR 时 GitHub 会自动加载该模板。请按模板填写变更信息：
+
 ```bash
 gh pr create \
   --title "feat: 添加深色模式支持" \
   --body "Closes #42
 
-## 改动说明
+## 变更描述
 - 新增 dark-mode CSS 变量
 - 根据系统偏好自动切换主题
 
+## 变更类型
+- [x] 新功能（添加新功能的改动）
+
 ## 测试
-- [ ] 手动测试：浅色/深色主题切换正常
-- [ ] 无回归问题"
+- [x] 手动测试：浅色/深色主题切换正常
+- [x] 无回归问题
+
+## 检查清单
+- [x] 我的代码遵循了本项目的代码风格
+- [x] 我已自行审查了代码
+- [x] 我已更新了相关文档"
 ```
 
 ### 第六步：代码审查
