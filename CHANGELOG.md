@@ -44,3 +44,11 @@
 - 初始化项目，添加 `README.md`
 - 添加 `CONTRIBUTING.md` 贡献指南
 - 添加标准版项目管理模板 `project-management-template.md`
+
+[Unreleased]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.5.0...HEAD
+[1.5.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.4.0...v1.5.0
+[1.4.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.3.0...v1.4.0
+[1.3.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.2.0...v1.3.0
+[1.2.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.1.0...v1.2.0
+[1.1.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.0.0...v1.1.0
+[1.0.0]: https://github.com/liangpingxian/LingeeGitTest/releases/tag/v1.0.0
