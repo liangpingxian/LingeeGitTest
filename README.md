@@ -49,7 +49,7 @@ git remote add upstream https://github.com/liangpingxian/LingeeGitTest.git
 
    ```bash
    gh issue list --state open --search "no:assignee"
-   gh issue edit <编号> --add-assignee @me
+   gh issue edit <编号> --add-assignee @me --add-label "in progress"
    ```
 
 2. **同步上游代码**
@@ -110,7 +110,7 @@ git remote add upstream https://github.com/liangpingxian/LingeeGitTest.git
 | 命令 | 用途 |
 |------|------|
 | `gh issue list --state open` | 查看所有未关闭 Issue |
-| `gh issue edit <N> --add-assignee @me` | 认领 Issue |
+| `gh issue edit <N> --add-assignee @me --add-label "in progress"` | 认领 Issue 并标记进行中 |
 | `git checkout -b feature/<N>-desc` | 创建功能分支 |
 | `git commit -m "fix: resolve #N ..."` | 提交并关联 Issue |
 | `gh pr create --title "..."` | 创建 Pull Request |

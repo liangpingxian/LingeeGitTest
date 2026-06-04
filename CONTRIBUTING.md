@@ -35,7 +35,7 @@ git remote -v
 gh issue list --state open --search "no:assignee"
 
 # 认领你想要处理的 Issue（将 <编号> 替换为实际 Issue 编号）
-gh issue edit <编号> --add-assignee @me
+gh issue edit <编号> --add-assignee @me --add-label "in progress"
 ```
 
 > 若没有合适的 Issue，可以先创建一个，描述你打算做的改动，再认领它。项目提供了 Issue 模板（Bug 报告、功能请求），创建时请选择对应模板填写。
