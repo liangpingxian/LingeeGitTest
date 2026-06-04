@@ -63,8 +63,10 @@ git remote add upstream https://github.com/liangpingxian/LingeeGitTest.git
 
 3. **创建功能分支**
 
+   分支前缀根据改动类型选择：`feature/`（新功能）、`fix/`（Bug 修复）、`docs/`（文档）、`refactor/`（重构）
+
    ```bash
-   git checkout -b feature/<issue-编号>-<简短描述>
+   git checkout -b fix/<issue-编号>-<简短描述>
    ```
 
 4. **完成开发后提交**
@@ -72,7 +74,7 @@ git remote add upstream https://github.com/liangpingxian/LingeeGitTest.git
    ```bash
    git add .
    git commit -m "fix: resolve #<编号> <描述>"
-   git push origin feature/<issue-编号>-<简短描述>
+   git push origin fix/<issue-编号>-<简短描述>
    ```
 
 5. **发起 Pull Request 并关闭 Issue**（项目已配置 PR 模板，创建时会自动加载）
