@@ -4,6 +4,10 @@
 
 ## [Unreleased]
 
+### 修复
+
+- 修正 `README.md` 协作流程第5步标题「发起 Pull Request 并关闭 Issue」表述误导，改为「发起 Pull Request」与 CONTRIBUTING.md 一致，并补充说明 PR 合并后 Issue 自动关闭
+
 ## [2.1.0] - 2026-06-05
 
 ### 修复
