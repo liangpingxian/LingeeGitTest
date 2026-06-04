@@ -6,6 +6,7 @@
 
 ### 修复
 
+- 修正 `README.md` 快速开始未配置 upstream 远程仓库，导致协作流程中 `git fetch upstream` 失败的问题
 - 在 `README.md` 协作流程中补充「同步上游代码」步骤，与 `CONTRIBUTING.md` 保持一致
 
 ## [1.5.0] - 2026-06-04
