@@ -4,6 +4,8 @@
 
 ## [Unreleased]
 
+## [1.9.0] - 2026-06-05
+
 ### 修复
 
 - 修正 `README.md` 和 `CONTRIBUTING.md` 中 Issue 认领命令缺少 `--add-label "in progress"` 参数的问题，使文档与标准协作流程保持一致
@@ -77,7 +79,8 @@
 - 添加 `CONTRIBUTING.md` 贡献指南
 - 添加标准版项目管理模板 `project-management-template.md`
 
-[Unreleased]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.8.0...HEAD
+[Unreleased]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.9.0...HEAD
+[1.9.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.8.0...v1.9.0
 [1.8.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.7.0...v1.8.0
 [1.7.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.6.0...v1.7.0
 [1.6.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.5.0...v1.6.0
