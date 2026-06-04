@@ -15,8 +15,15 @@
 
 ```
 LingeeGitTest/
-├── README.md                      # 项目说明（本文件）
-└── project-management-template.md # 项目管理模板
+├── README.txt                              # 项目说明（本文件）
+├── CONTRIBUTING.md                         # 贡献指南
+├── project-management-template.md          # 项目管理模板（标准版）
+├── project-management-template-v2.md       # 项目管理模板（敏捷/迭代版）
+└── .github/
+    ├── ISSUE_TEMPLATE/
+    │   ├── bug_report.md                   # Bug 报告模板
+    │   └── feature_request.md              # 功能请求模板
+    └── pull_request_template.md            # Pull Request 模板
 ```
 
 ## 快速开始
@@ -59,14 +66,19 @@ cd LingeeGitTest
 
 ## 项目管理模板
 
-[project-management-template.md](./project-management-template.md) 提供了标准的项目管理文档框架，涵盖：
+本仓库提供两套项目管理模板，可根据项目类型选择使用：
+
+- [project-management-template.md](./project-management-template.md) — 标准版，适用于瀑布式/传统项目管理
+- [project-management-template-v2.md](./project-management-template-v2.md) — 敏捷/迭代版，适用于 Scrum 等敏捷开发流程
+
+两套模板均涵盖：
 
 - 项目概述与目标
 - 团队分工
-- 里程碑计划
+- 里程碑/迭代计划
 - 风险管理
 - 沟通计划
-- 预算跟踪
+- 预算/度量跟踪
 
 ## 贡献指南
 
