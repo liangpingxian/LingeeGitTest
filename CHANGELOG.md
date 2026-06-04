@@ -1,0 +1,39 @@
+# Changelog
+
+本文件记录项目的所有重要变更，遵循 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.0.0/) 规范。
+
+## [未发布]
+
+## [1.4.0] - 2026-06-04
+
+### 修复
+
+- 修正 `project-management-template-v2.md` 内部版本号与文件名不一致问题（v1.0 → v2.0）
+
+## [1.3.0] - 2026-06-04
+
+### 修复
+
+- 修正 `README.txt` 目录结构描述与实际文件不一致的问题
+
+## [1.2.0] - 2026-06-04
+
+### 新增
+
+- 新增敏捷/迭代版项目管理模板 `project-management-template-v2.md`
+
+## [1.1.0] - 2026-06-03
+
+### 新增
+
+- 新增 GitHub Issue 模板（Bug 报告、功能请求）
+- 新增 GitHub Pull Request 模板
+- 将 README.md 内容迁移至 `README.txt`
+
+## [1.0.0] - 2026-06-03
+
+### 新增
+
+- 初始化项目，添加 `README.md`
+- 添加 `CONTRIBUTING.md` 贡献指南
+- 添加标准版项目管理模板 `project-management-template.md`
