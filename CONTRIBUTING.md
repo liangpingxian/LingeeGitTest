@@ -109,7 +109,7 @@ gh pr create --title "feat: 添加深色模式支持"
 
 ## 问题反馈
 
-发现 Bug 或有改进建议？请[创建 Issue](https://github.com/<your-username>/LingeeGitTest/issues/new)，说明：
+发现 Bug 或有改进建议？请[创建 Issue](https://github.com/liangpingxian/LingeeGitTest/issues/new)，说明：
 1. 问题描述或改进目标
 2. 复现步骤（如是 Bug）
 3. 期望行为

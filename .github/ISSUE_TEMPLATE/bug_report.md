@@ -1,6 +1,6 @@
 ---
 name: Bug 报告
-about: 报告项目中的问题
+description: 报告项目中的问题
 title: '[Bug] '
 labels: bug
 ---
