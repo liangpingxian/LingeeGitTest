@@ -4,6 +4,10 @@
 
 ## [Unreleased]
 
+### 修复
+
+- 修正 `project-management-template.md` 和 `project-management-template-v2.md` 的最后更新日期为 2026-06-05，与 CHANGELOG v2.0.0 发布日期保持一致
+
 ## [2.0.0] - 2026-06-05
 
 ### 新增
