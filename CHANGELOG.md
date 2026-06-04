@@ -4,6 +4,8 @@
 
 ## [Unreleased]
 
+## [2.1.0] - 2026-06-05
+
 ### 修复
 
 - 修正 `project-management-template.md` 和 `project-management-template-v2.md` 的最后更新日期为 2026-06-05，与 CHANGELOG v2.0.0 发布日期保持一致
@@ -90,7 +92,8 @@
 - 添加 `CONTRIBUTING.md` 贡献指南
 - 添加标准版项目管理模板 `project-management-template.md`
 
-[Unreleased]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.0.0...HEAD
+[Unreleased]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.1.0...HEAD
+[2.1.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.0.0...v2.1.0
 [2.0.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.9.0...v2.0.0
 [1.9.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.8.0...v1.9.0
 [1.8.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.7.0...v1.8.0
