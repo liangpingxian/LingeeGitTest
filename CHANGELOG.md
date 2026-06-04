@@ -4,6 +4,8 @@
 
 ## [Unreleased]
 
+## [2.3.0] - 2026-06-05
+
 ### 修复
 
 - 补充 `README.md` 协作流程缺少的「第六步：代码审查」，与 `CONTRIBUTING.md` 第六步保持一致
@@ -104,7 +106,8 @@
 - 添加 `CONTRIBUTING.md` 贡献指南
 - 添加标准版项目管理模板 `project-management-template.md`
 
-[Unreleased]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.2.0...HEAD
+[Unreleased]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.3.0...HEAD
+[2.3.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.2.0...v2.3.0
 [2.2.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.1.0...v2.2.0
 [2.1.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.0.0...v2.1.0
 [2.0.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.9.0...v2.0.0
