@@ -34,8 +34,13 @@ LingeeGitTest/
 ### 克隆仓库
 
 ```bash
-git clone https://github.com/liangpingxian/LingeeGitTest.git
+# 1. Fork 仓库（在 GitHub 页面点击 Fork 按钮）
+# 2. 克隆你的 Fork
+git clone https://github.com/<your-username>/LingeeGitTest.git
 cd LingeeGitTest
+
+# 3. 添加上游仓库
+git remote add upstream https://github.com/liangpingxian/LingeeGitTest.git
 ```
 
 ### 协作流程
