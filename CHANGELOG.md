@@ -4,6 +4,10 @@
 
 ## [Unreleased]
 
+### 修复
+
+- 修正 `CONTRIBUTING.md` 问题反馈链接指向空白 Issue 表单，改为指向模板选择页面 `/issues/new/choose`，与项目 Issue 模板引导保持一致
+
 ## [1.8.0] - 2026-06-05
 
 ### 修复
