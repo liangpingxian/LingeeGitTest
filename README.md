@@ -98,6 +98,23 @@ git remote add upstream https://github.com/liangpingxian/LingeeGitTest.git
 - 沟通计划
 - 预算/度量跟踪
 
+## 技术栈
+
+- **版本控制**: Git
+- **协作平台**: GitHub
+- **CLI 工具**: GitHub CLI (`gh`)
+- **项目管理**: Issue + PR 驱动
+
+## 常用命令速查
+
+| 命令 | 用途 |
+|------|------|
+| `gh issue list --state open` | 查看所有未关闭 Issue |
+| `gh issue edit <N> --add-assignee @me` | 认领 Issue |
+| `git checkout -b feature/<N>-desc` | 创建功能分支 |
+| `git commit -m "fix: resolve #N ..."` | 提交并关联 Issue |
+| `gh pr create --title "..."` | 创建 Pull Request |
+
 ## 贡献指南
 
 详见 [CONTRIBUTING.md](./CONTRIBUTING.md)，涵盖：
