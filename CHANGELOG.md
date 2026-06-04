@@ -6,6 +6,7 @@
 
 ### 修复
 
+- 补充 `README.md` 协作流程缺少的「第六步：代码审查」，与 `CONTRIBUTING.md` 第六步保持一致
 - 修正 `README.md` 协作流程 Step 4 使用 `git add .` 与 CONTRIBUTING.md 不一致的问题，改为 `git add <changed-files>` 避免误提交无关文件
 - 补充 `README.md` 协作流程 Step 3 缺少的 `fix/` 分支命名示例，与 CONTRIBUTING.md 分支命名规范保持一致
 
