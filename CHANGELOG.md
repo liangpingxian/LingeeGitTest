@@ -10,7 +10,7 @@
 
 - 修正 `CONTRIBUTING.md` PR 示例与项目 PR 模板（`.github/pull_request_template.md`）格式不一致的问题
 - 在 `CONTRIBUTING.md` 创建 Issue 部分补充 Issue 模板（Bug 报告、功能请求）的使用引导
-- 在 `README.md` 快速开始中补充 PR 模板的提示说明
+- 在 `README.md` 协作流程中补充 PR 模板的提示说明
 - 修正 `README.md` 快速开始未配置 upstream 远程仓库，导致协作流程中 `git fetch upstream` 失败的问题
 - 在 `README.md` 协作流程中补充「同步上游代码」步骤，与 `CONTRIBUTING.md` 保持一致
 
