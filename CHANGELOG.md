@@ -6,13 +6,7 @@
 
 ### 修复
 
-- 修正 `README.md` 协作流程第5步标题「发起 Pull Request 并关闭 Issue」表述误导，改为「发起 Pull Request」与 CONTRIBUTING.md 一致，并补充说明 PR 合并后 Issue 自动关闭
-
-## [2.1.0] - 2026-06-05
-
-### 修复
-
-- 修正 `project-management-template.md` 和 `project-management-template-v2.md` 的最后更新日期为 2026-06-05，与 CHANGELOG v2.0.0 发布日期保持一致
+- 修正 `README.md` 协作流程第5步标题「发起 Pull Request 并关闭 Issue」表述误导，改为「发起 Pull Request」，与 CONTRIBUTING.md 保持一致，并补充说明 Issue 在 PR 合并后自动关闭
 
 ## [2.0.0] - 2026-06-05
 
@@ -96,8 +90,7 @@
 - 添加 `CONTRIBUTING.md` 贡献指南
 - 添加标准版项目管理模板 `project-management-template.md`
 
-[Unreleased]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.1.0...HEAD
-[2.1.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.0.0...v2.1.0
+[Unreleased]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.0.0...HEAD
 [2.0.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.9.0...v2.0.0
 [1.9.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.8.0...v1.9.0
 [1.8.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.7.0...v1.8.0
