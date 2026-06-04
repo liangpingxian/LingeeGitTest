@@ -12,6 +12,13 @@ Desktop.ini
 # Linux
 *~
 
+# AI / Agent tools
+.agent_context/
+.multica/
+.claude/
+.cursor/
+.aider*
+
 # IDE / Editor
 .vscode/
 .idea/
