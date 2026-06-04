@@ -4,6 +4,8 @@
 
 ## [Unreleased]
 
+## [1.8.0] - 2026-06-05
+
 ### 修复
 
 - 修正 `CONTRIBUTING.md` 第五步 `gh pr create` 命令使用 `--body` 参数覆盖 PR 模板的问题，改为省略 `--body` 让 GitHub 自动加载模板
@@ -70,7 +72,8 @@
 - 添加 `CONTRIBUTING.md` 贡献指南
 - 添加标准版项目管理模板 `project-management-template.md`
 
-[Unreleased]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.7.0...HEAD
+[Unreleased]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.8.0...HEAD
+[1.8.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.7.0...v1.8.0
 [1.7.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.6.0...v1.7.0
 [1.6.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.5.0...v1.6.0
 [1.5.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.4.0...v1.5.0
