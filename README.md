@@ -20,6 +20,7 @@ LingeeGitTest/
 ├── .gitignore                              # Git 忽略规则
 ├── CONTRIBUTING.md                         # 贡献指南
 ├── CHANGELOG.md                            # 版本变更历史
+├── CODE_OF_CONDUCT.md                      # 行为准则（Contributor Covenant v2.1）
 ├── project-management-template.md          # 项目管理模板（标准版）
 ├── project-management-template-v2.md       # 项目管理模板（敏捷/迭代版）
 └── .github/
@@ -106,6 +107,10 @@ git remote add upstream https://github.com/liangpingxian/LingeeGitTest.git
 - Issue 认领与分支命名规范
 - Commit 信息规范（[Conventional Commits](https://www.conventionalcommits.org/)）
 - Pull Request 流程与审查要求
+
+## 行为准则
+
+本项目采用 [Contributor Covenant](https://www.contributor-covenant.org/) v2.1 行为准则。参与本项目即表示你同意遵守该准则，详见 [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md)。
 
 ## License
 
