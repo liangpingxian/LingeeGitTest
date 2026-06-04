@@ -6,6 +6,8 @@
 
 ### 修复
 
+- 将 `README.txt` 重命名为 `README.md`，使 GitHub 正确渲染 Markdown 格式
+- 移除 `.gitignore` 中 `*~` 的重复条目
 - 添加 `.gitignore` 文件，排除常见系统/编辑器临时文件
 - 添加 `LICENSE` 文件（MIT），与 README 中的声明一致
 
