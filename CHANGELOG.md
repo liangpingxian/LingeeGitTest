@@ -4,6 +4,8 @@
 
 ## [Unreleased]
 
+## [1.7.0] - 2026-06-04
+
 ### 修复
 
 - 在 `.gitignore` 中添加 `.env`、`.env.local`、`.env.*` 等环境变量文件的忽略规则，防止敏感信息被误提交
@@ -61,7 +63,8 @@
 - 添加 `CONTRIBUTING.md` 贡献指南
 - 添加标准版项目管理模板 `project-management-template.md`
 
-[Unreleased]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.6.0...HEAD
+[Unreleased]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.7.0...HEAD
+[1.7.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.6.0...v1.7.0
 [1.6.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.5.0...v1.6.0
 [1.5.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.3.0...v1.4.0
