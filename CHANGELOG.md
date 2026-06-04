@@ -10,6 +10,7 @@
 - 补充 `.github/` 目录及其模板文件（Bug 报告、功能请求 Issue 模板和 PR 模板），使仓库实际文件与 `README.md` 目录结构描述一致
 - 修正 `README.md` 协作流程第 5 步 `gh pr create` 命令使用 `--body` 参数覆盖 PR 模板的问题，改为省略 `--body` 让 GitHub 自动加载模板
 - 移除 Issue 模板中无效的 `assignees: ''` 字段，避免空字符串导致 GitHub 模板解析异常
+- 修正 `CONTRIBUTING.md` 问题反馈部分的 Issue 创建链接，从上游仓库地址改为用户 Fork 占位符 `<your-username>`，与协作流程中其他链接保持一致
 
 ## [1.7.0] - 2026-06-04
 
