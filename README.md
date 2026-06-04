@@ -47,13 +47,21 @@ cd LingeeGitTest
    gh issue edit <编号> --add-assignee @me
    ```
 
-2. **创建功能分支**
+2. **同步上游代码**
+
+   ```bash
+   git checkout main
+   git fetch upstream
+   git merge upstream/main
+   ```
+
+3. **创建功能分支**
 
    ```bash
    git checkout -b feature/<issue-编号>-<简短描述>
    ```
 
-3. **完成开发后提交**
+4. **完成开发后提交**
 
    ```bash
    git add .
@@ -61,7 +69,7 @@ cd LingeeGitTest
    git push origin feature/<issue-编号>-<简短描述>
    ```
 
-4. **发起 Pull Request 并关闭 Issue**
+5. **发起 Pull Request 并关闭 Issue**
 
    ```bash
    gh pr create --title "<标题>" --body "Closes #<编号>"
