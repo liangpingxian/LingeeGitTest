@@ -4,6 +4,8 @@
 
 ## [Unreleased]
 
+## [2.0.0] - 2026-06-05
+
 ### 新增
 
 - 添加 `CODE_OF_CONDUCT.md` 行为准则文件（基于 Contributor Covenant v2.1 中文版），为多人协作提供行为规范
@@ -84,7 +86,8 @@
 - 添加 `CONTRIBUTING.md` 贡献指南
 - 添加标准版项目管理模板 `project-management-template.md`
 
-[Unreleased]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.9.0...HEAD
+[Unreleased]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.9.0...v2.0.0
 [1.9.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.8.0...v1.9.0
 [1.8.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.7.0...v1.8.0
 [1.7.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.6.0...v1.7.0
