@@ -4,6 +4,11 @@
 
 ## [Unreleased]
 
+### 新增
+
+- 添加 `CODE_OF_CONDUCT.md` 行为准则文件（基于 Contributor Covenant v2.1 中文版），为多人协作提供行为规范
+- 更新 `README.md` 目录结构和新增「行为准则」章节，指向 `CODE_OF_CONDUCT.md`
+
 ## [1.9.0] - 2026-06-05
 
 ### 修复
