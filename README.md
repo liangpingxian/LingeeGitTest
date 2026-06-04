@@ -84,6 +84,12 @@ git remote add upstream https://github.com/liangpingxian/LingeeGitTest.git
 
    > PR 创建后，请在模板的「关联 Issue」字段中填写 `Closes #<编号>` 以关联对应 Issue，PR 合并后 Issue 将自动关闭。
 
+6. **代码审查**
+
+   - PR 合并前需至少 **1 位** 其他成员 Review 并 Approve
+   - 审查者请在 24 小时内响应
+   - 若需要修改，请在原分支上继续提交，PR 会自动更新
+
 ## 项目管理模板
 
 本仓库提供两套项目管理模板，可根据项目类型选择使用：
