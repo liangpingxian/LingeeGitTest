@@ -2,7 +2,7 @@
 
 简明扼要地描述此 PR 包含的变更内容。
 
-关联 Issue：closes #
+关联 Issue：closes #<issue编号>
 
 ## 变更类型
 
