@@ -4,6 +4,8 @@
 
 ## [Unreleased]
 
+## [1.6.0] - 2026-06-04
+
 ### 修复
 
 - 修正 `CONTRIBUTING.md` PR 示例与项目 PR 模板（`.github/pull_request_template.md`）格式不一致的问题
@@ -55,7 +57,8 @@
 - 添加 `CONTRIBUTING.md` 贡献指南
 - 添加标准版项目管理模板 `project-management-template.md`
 
-[Unreleased]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.5.0...HEAD
+[Unreleased]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.6.0...HEAD
+[1.6.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.5.0...v1.6.0
 [1.5.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v1.2.0...v1.3.0
