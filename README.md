@@ -74,10 +74,12 @@ git remote add upstream https://github.com/liangpingxian/LingeeGitTest.git
    git push origin feature/<issue-编号>-<简短描述>
    ```
 
-5. **发起 Pull Request 并关闭 Issue**（项目已配置 PR 模板，创建时会自动加载）
+5. **发起 Pull Request 并关闭 Issue**（项目已配置 PR 模板，创建时会自动加载，请按模板填写变更信息）
 
    ```bash
-   gh pr create --title "<标题>" --body "Closes #<编号>"
+   gh pr create --title "<标题>"
+   # GitHub 将自动加载 .github/pull_request_template.md 模板
+   # 请在模板中「关联 Issue」处填写 closes #<编号> 以自动关闭 Issue
    ```
 
 ## 项目管理模板
