@@ -83,26 +83,10 @@ git push origin feature/42-add-dark-mode
 项目已配置 Pull Request 模板（`.github/pull_request_template.md`），创建 PR 时 GitHub 会自动加载该模板。请按模板填写变更信息：
 
 ```bash
-gh pr create \
-  --title "feat: 添加深色模式支持" \
-  --body "Closes #42
-
-## 变更描述
-- 新增 dark-mode CSS 变量
-- 根据系统偏好自动切换主题
-
-## 变更类型
-- [x] 新功能（添加新功能的改动）
-
-## 测试
-- [x] 手动测试：浅色/深色主题切换正常
-- [x] 无回归问题
-
-## 检查清单
-- [x] 我的代码遵循了本项目的代码风格
-- [x] 我已自行审查了代码
-- [x] 我已更新了相关文档"
+gh pr create --title "feat: 添加深色模式支持"
 ```
+
+> PR 创建后，请在模板的「关联 Issue」字段中填写 `Closes #<编号>` 以关联对应 Issue，并按模板逐项填写变更信息。
 
 ### 第六步：代码审查
 
