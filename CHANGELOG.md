@@ -4,6 +4,11 @@
 
 ## [Unreleased]
 
+### 新增
+
+- 添加 `CODE_OF_CONDUCT.md` 行为准则文件（基于 Contributor Covenant v2.1），为多人协作提供行为规范
+- 更新 `README.md` 目录结构和新增行为准则章节，指向 `CODE_OF_CONDUCT.md`
+
 ### 修复
 
 - 修正 `CONTRIBUTING.md` 问题反馈链接指向空白 Issue 表单，改为指向模板选择页面 `/issues/new/choose`，与项目 Issue 模板引导保持一致
