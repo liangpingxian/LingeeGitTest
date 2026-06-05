@@ -4,6 +4,8 @@
 
 ## [Unreleased]
 
+## [2.8.0] - 2026-06-05
+
 ### 修复
 
 - 在 `README.md` 协作流程中补充缺失的第七步「加入贡献者名单」，与 `CONTRIBUTING.md` 保持一致
@@ -145,7 +147,8 @@
 - 添加 `CONTRIBUTING.md` 贡献指南
 - 添加标准版项目管理模板 `project-management-template.md`
 
-[Unreleased]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.7.0...HEAD
+[Unreleased]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.8.0...HEAD
+[2.8.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.7.0...v2.8.0
 [2.7.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.6.0...v2.7.0
 [2.6.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.5.0...v2.6.0
 [2.5.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.4.0...v2.5.0
