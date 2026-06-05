@@ -14,6 +14,8 @@
 - 修正 `README.md` 常用命令速查表 commit 示例使用 `#N`（无尖括号）与其余占位符 `<N>` 格式不一致的问题，统一改为 `#<N>`
 - 恢复 `CHANGELOG.md` 中被意外删除的 v2.5.0 版本记录及其比较链接
 - 将 `CODE_OF_CONDUCT.md` 归属部分的 3 处裸 URL 转换为 Markdown 链接格式，与文件其余部分保持一致
+- 在 `CONTRIBUTING.md` 中补充第七步，提醒贡献者 PR 合并后将自己添加到 `CONTRIBUTORS.md` 贡献者名单（修复 #129）
+- 将 `README.md` 常用命令速查表中的占位符 `<N>` 统一改为 `<编号>`，与 `CONTRIBUTING.md` 保持一致（修复 #129）
 
 ## [2.5.0] - 2026-06-05
 
