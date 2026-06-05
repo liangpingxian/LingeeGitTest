@@ -4,12 +4,10 @@
 
 ## [Unreleased]
 
-## [2.5.0] - 2026-06-05
+### 新增
 
-### 修复
-
-- 在 `CONTRIBUTING.md` 开头补充对 `CODE_OF_CONDUCT.md` 的引用，提示贡献者参与前须遵守行为准则
-- 在 `CONTRIBUTING.md` 第四步「开发与提交」中补充提示，要求贡献者在 `CHANGELOG.md` 的 `[Unreleased]` 段落记录变更
+- 新增 `CONTRIBUTORS.md` 贡献者名单文件，列出项目贡献者信息
+- 在 `README.md` 目录结构中添加对 `CONTRIBUTORS.md` 的引用
 
 ## [2.4.0] - 2026-06-05
 
@@ -119,8 +117,7 @@
 - 添加 `CONTRIBUTING.md` 贡献指南
 - 添加标准版项目管理模板 `project-management-template.md`
 
-[Unreleased]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.5.0...HEAD
-[2.5.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.4.0...v2.5.0
+[Unreleased]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.4.0...HEAD
 [2.4.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.3.0...v2.4.0
 [2.3.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.2.0...v2.3.0
 [2.2.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.1.0...v2.2.0
