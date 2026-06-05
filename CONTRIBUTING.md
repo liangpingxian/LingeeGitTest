@@ -50,10 +50,13 @@ git merge upstream/main
 
 ### 第三步：创建功能分支
 
-分支命名格式：`feature/<issue-编号>-<简短描述>` 或 `fix/<issue-编号>-<简短描述>`
+分支命名格式：`feature/<issue-编号>-<简短描述>`、`fix/<issue-编号>-<简短描述>`、`docs/<issue-编号>-<简短描述>` 或 `refactor/<issue-编号>-<简短描述>`
 
 ```bash
 git checkout -b feature/42-add-dark-mode
+# 或 fix/42-fix-login-redirect
+# 或 docs/42-api-guide
+# 或 refactor/42-auth-module
 ```
 
 ### 第四步：开发与提交
