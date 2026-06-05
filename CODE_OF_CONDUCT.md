@@ -67,11 +67,11 @@
 ## 归属
 
 本行为准则改编自 [Contributor Covenant][homepage] 2.1 版，
-可在 https://www.contributor-covenant.org/version/2/1/code_of_conduct.html 查阅。
+可在 [Contributor Covenant v2.1 行为准则](https://www.contributor-covenant.org/version/2/1/code_of_conduct.html) 查阅。
 
 社区影响指南的灵感来自 [Mozilla 的行为准则执行阶梯](https://github.com/mozilla/diversity)。
 
 [homepage]: https://www.contributor-covenant.org
 
-如需本行为准则的常见问题的解答，请参阅 https://www.contributor-covenant.org/faq。
-翻译版本可在 https://www.contributor-covenant.org/translations 查阅。
+如需本行为准则的常见问题的解答，请参阅 [Contributor Covenant FAQ](https://www.contributor-covenant.org/faq)。
+翻译版本可在 [Contributor Covenant 翻译页面](https://www.contributor-covenant.org/translations) 查阅。
