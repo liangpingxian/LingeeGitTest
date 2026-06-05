@@ -4,6 +4,8 @@
 
 ## [Unreleased]
 
+## [2.6.0] - 2026-06-05
+
 ### 新增
 
 - 新增 `CONTRIBUTORS.md` 贡献者名单文件，列出项目贡献者信息
@@ -130,7 +132,8 @@
 - 添加 `CONTRIBUTING.md` 贡献指南
 - 添加标准版项目管理模板 `project-management-template.md`
 
-[Unreleased]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.5.0...HEAD
+[Unreleased]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.6.0...HEAD
+[2.6.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.5.0...v2.6.0
 [2.5.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.4.0...v2.5.0
 [2.4.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.3.0...v2.4.0
 [2.3.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.2.0...v2.3.0
