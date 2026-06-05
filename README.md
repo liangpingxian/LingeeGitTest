@@ -124,7 +124,7 @@ git remote add upstream https://github.com/liangpingxian/LingeeGitTest.git
 | `gh issue edit <N> --add-assignee @me --add-label "in progress"` | 认领 Issue 并标记进行中 |
 | `git checkout -b feature/<N>-desc`、`fix/<N>-desc`、`docs/<N>-desc` 或 `refactor/<N>-desc` | 创建功能/修复/文档/重构分支 |
 | `git add <changed-files>` | 暂存指定文件 |
-| `git commit -m "feat: resolve #N ..."` | 提交并关联 Issue |
+| `git commit -m "feat: resolve #<N> ..."` | 提交并关联 Issue |
 | `gh pr create --title "..."` | 创建 Pull Request |
 
 ## 贡献指南
