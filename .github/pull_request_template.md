@@ -25,3 +25,4 @@ Closes #
 - [ ] 我已自行审查了改动
 - [ ] 我已更新了相关文档
 - [ ] 我已在 `CHANGELOG.md` 的 `[Unreleased]` 段落记录了本次变更
+- [ ] PR 合并后，我已将自己添加到 [CONTRIBUTORS.md](../CONTRIBUTORS.md) 贡献者名单
