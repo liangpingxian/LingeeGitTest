@@ -21,6 +21,7 @@ LingeeGitTest/
 ├── CONTRIBUTING.md                         # 贡献指南
 ├── CHANGELOG.md                            # 版本变更历史
 ├── CODE_OF_CONDUCT.md                      # 行为准则（Contributor Covenant v2.1）
+├── CONTRIBUTORS.md                         # 贡献者名单
 ├── project-management-template.md          # 项目管理模板（标准版）
 ├── project-management-template-v2.md       # 项目管理模板（敏捷/迭代版）
 └── .github/
