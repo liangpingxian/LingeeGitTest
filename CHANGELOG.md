@@ -4,6 +4,10 @@
 
 ## [Unreleased]
 
+### 修复
+
+- 在 PR 模板检查清单中新增「PR 合并后，我已将自己添加到 CONTRIBUTORS.md 贡献者名单」提醒项，与 CONTRIBUTING.md 第七步保持一致
+
 ## [2.9.0] - 2026-06-05
 
 ### 修复
