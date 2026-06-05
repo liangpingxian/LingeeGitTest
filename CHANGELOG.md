@@ -4,6 +4,8 @@
 
 ## [Unreleased]
 
+## [2.9.0] - 2026-06-05
+
 ### 修复
 
 - 在 PR 模板检查清单中新增 `CHANGELOG.md` 更新检查项，与 `CONTRIBUTING.md` 第四步的明确要求保持一致
@@ -151,7 +153,8 @@
 - 添加 `CONTRIBUTING.md` 贡献指南
 - 添加标准版项目管理模板 `project-management-template.md`
 
-[Unreleased]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.8.0...HEAD
+[Unreleased]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.9.0...HEAD
+[2.9.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.8.0...v2.9.0
 [2.8.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.7.0...v2.8.0
 [2.7.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.6.0...v2.7.0
 [2.6.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.5.0...v2.6.0
