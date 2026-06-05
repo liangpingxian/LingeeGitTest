@@ -23,6 +23,7 @@ LingeeGitTest/
 ├── CODE_OF_CONDUCT.md                      # 行为准则（Contributor Covenant v2.1）
 ├── project-management-template.md          # 项目管理模板（标准版）
 ├── project-management-template-v2.md       # 项目管理模板（敏捷/迭代版）
+├── TROUBLESHOOTING.md                      # Git 常见错误排查指南
 └── .github/
     ├── ISSUE_TEMPLATE/
     │   ├── bug_report.md                   # Bug 报告模板
@@ -134,6 +135,16 @@ git remote add upstream https://github.com/liangpingxian/LingeeGitTest.git
 - Issue 认领与分支命名规范
 - Commit 信息规范（[Conventional Commits](https://www.conventionalcommits.org/)）
 - Pull Request 流程与审查要求
+
+## 错误排查
+
+遇到 Git 操作问题？详见 [TROUBLESHOOTING.md](./TROUBLESHOOTING.md)，涵盖：
+
+- Merge Conflict 解决流程
+- Detached HEAD 恢复方法
+- Push Rejected（非快进）处理
+- 误删分支恢复
+- .gitignore 不生效的处理
 
 ## 行为准则
 
