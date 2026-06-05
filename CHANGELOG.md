@@ -4,6 +4,12 @@
 
 ## [Unreleased]
 
+## [2.4.0] - 2026-06-05
+
+### 修复
+
+- 修正 `README.md` 协作流程第 4 步及「常用命令速查」表中 commit 示例使用 `fix:` 类型与 `CONTRIBUTING.md` 使用 `feat:` 不一致的问题，统一改为 `feat:`
+
 ## [2.3.0] - 2026-06-05
 
 ### 修复
@@ -106,7 +112,8 @@
 - 添加 `CONTRIBUTING.md` 贡献指南
 - 添加标准版项目管理模板 `project-management-template.md`
 
-[Unreleased]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.3.0...HEAD
+[Unreleased]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.4.0...HEAD
+[2.4.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.3.0...v2.4.0
 [2.3.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.2.0...v2.3.0
 [2.2.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.1.0...v2.2.0
 [2.1.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.0.0...v2.1.0
