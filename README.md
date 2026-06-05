@@ -93,6 +93,10 @@ git remote add upstream https://github.com/liangpingxian/LingeeGitTest.git
    - 审查者请在 24 小时内响应
    - 若需要修改，请在原分支上继续提交，PR 会自动更新
 
+7. **加入贡献者名单**
+
+   PR 合并后，请将你的信息添加到 [CONTRIBUTORS.md](./CONTRIBUTORS.md) 贡献者名单中，格式参考文件内已有条目。
+
 ## 项目管理模板
 
 本仓库提供两套项目管理模板，可根据项目类型选择使用：
