@@ -2,6 +2,8 @@
 
 感谢你对本项目的关注！本文档说明如何参与贡献。
 
+参与本项目即表示你同意遵守我们的[行为准则（CODE_OF_CONDUCT.md）](./CODE_OF_CONDUCT.md)，请在贡献前阅读。
+
 ## 开发环境准备
 
 ### 前提条件
@@ -68,6 +70,8 @@ git add <changed-files>
 git commit -m "feat: resolve #42 添加深色模式支持"
 git push origin feature/42-add-dark-mode
 ```
+
+> 提交前请在 `CHANGELOG.md` 的 `[Unreleased]` 段落补充本次变更的简要说明，以便后续发布时汇总版本记录。
 
 #### Commit 类型参考
 
