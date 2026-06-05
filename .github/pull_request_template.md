@@ -24,3 +24,4 @@ Closes #
 - [ ] 我的提交信息遵循 [Conventional Commits](https://www.conventionalcommits.org/) 规范
 - [ ] 我已自行审查了改动
 - [ ] 我已更新了相关文档
+- [ ] 我已在 `CHANGELOG.md` 的 `[Unreleased]` 段落记录了本次变更
