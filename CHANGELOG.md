@@ -4,6 +4,8 @@
 
 ## [Unreleased]
 
+## [2.7.0] - 2026-06-05
+
 ### 修复
 
 - 在 `CONTRIBUTING.md` 协作流程末尾新增「第七步：加入贡献者名单」，提示贡献者在 PR 合并后将自己添加到 `CONTRIBUTORS.md`，解决贡献者按指南操作后不知需维护名单的问题
@@ -136,7 +138,8 @@
 - 添加 `CONTRIBUTING.md` 贡献指南
 - 添加标准版项目管理模板 `project-management-template.md`
 
-[Unreleased]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.6.0...HEAD
+[Unreleased]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.7.0...HEAD
+[2.7.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.6.0...v2.7.0
 [2.6.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.5.0...v2.6.0
 [2.5.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.4.0...v2.5.0
 [2.4.0]: https://github.com/liangpingxian/LingeeGitTest/compare/v2.3.0...v2.4.0
