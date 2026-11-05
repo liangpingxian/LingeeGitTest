@@ -2,14 +2,43 @@
   "schemaVersion": 2,
   "specId": "general-application-development-spec",
   "specRevision": 16,
-  "state": "requirements_ready",
-  "revision": 1,
+  "state": "design_ready",
+  "revision": 2,
   "completedActions": [
-    "requirements"
+    "requirements",
+    "design"
   ],
   "blockers": [],
   "scenarioId": "feature",
   "graphRevision": 5,
   "graphHash": "sha256:b40de31b37ec562e0cfe1005812bb53b4e422b4279e23a6892ffdc945663ffb2",
-  "updatedAt": "2026-11-05T01:48:03.045Z"
+  "updatedAt": "2026-11-05T01:49:41.747Z",
+  "applicationProfile": {
+    "schemaVersion": 1,
+    "applicationType": "simple-frontend",
+    "source": {
+      "artifactPath": "docs/wi-t1000384/requirements.md",
+      "sha256": "sha256:e3c61c6bbf5335a23051c3a2aae61f159f266428263c85fa655c016599f5d88f"
+    },
+    "reason": "需求基线为单用户工单 CRUD 应用：仅要求标题、描述创建与校验、回复追加、状态单向前转与列表/详情查看；验收证据类型均为交互与 session-persistence（刷新或重开后数据仍在），没有跨用户/跨设备共享要求；且需求「未规定事项」明确将用户角色体系、权限分配、通知/SLA/后台任务、外部集成与部署持久化技术排除在基线之外，因此服务端、权威数据库、认证、后台任务、外部集成与共享数据均不必要，选择 simple-frontend 路线（浏览器 localStorage 持久化）。",
+    "evidence": {
+      "supporting": [
+        "核心行为仅覆盖工单创建、回复、状态流转与查看四类 CRUD 行为",
+        "全部 AC 证据类型为 interaction、error-feedback、runtime-render、session-persistence，即刷新或重开页面后数据仍可读回（AC-01/AC-03/AC-04），无跨会话服务端验证要求",
+        "状态机限定待处理→处理中→已完成，属客户端可承载的本地业务规则",
+        "「未规定事项」明确排除用户角色体系与权限分配，单一用户即可完成全部验收路径",
+        "数据长期持久化技术与部署方式未纳入基线，无需服务端存储"
+      ],
+      "excluding": [
+        "需求「未规定事项」明确将用户角色体系、权限分配与组织归属方式排除在本次基线之外，无认证/权限要求",
+        "通知、SLA 时效、超期提醒、统计报表均未纳入基线，无后台任务或定时处理需求",
+        "数据长期持久化技术、部署方式与运行环境未规定，不要求服务端权威数据库",
+        "无任何外部系统集成、第三方服务调用要求",
+        "需求未要求跨用户或跨设备的数据共享与同步，处理人回复均为同一用户会话内的操作"
+      ],
+      "unresolved": []
+    },
+    "decidedAt": "2026-11-05T01:49:07.750Z",
+    "sha256": "sha256:611775dbde51637147d23a2dc2ab391ed18bf2bc44bc347fe31145c719501f0a"
+  }
 }

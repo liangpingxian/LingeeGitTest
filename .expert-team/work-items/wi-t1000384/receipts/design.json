@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "design:2",
+  "receiptType": "architecture-plan",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "design",
+  "inputRevision": 1,
+  "stateVersion": 2,
+  "outcome": "passed",
+  "contentHash": "sha256:1e841ff185575dae7917e591585539a4146cd299b4e36454333c235ff26ee789",
+  "createdAt": "2026-11-05T01:49:41.747Z",
+  "timing": {
+    "startedAt": "2026-11-05T01:48:49.226Z",
+    "completedAt": "2026-11-05T01:49:41.747Z",
+    "durationMs": 52521
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000384/architecture-baseline.md",
+      "bytes": 2579,
+      "sha256": "sha256:1916dd53fe35c709ebfe9464e1383fa46ba7e1d3bbb53a1c6e6def3efaa84a39",
+      "role": "primary",
+      "purpose": "工单系统（T1000384）simple-frontend 路线的架构基线：引用已批准需求快照，界定 React/Vite SPA 页面与交互范围、localStorage 数据归属与读写校验边界、实现入口与运行方式，以及可重复验证说明",
+      "title": "工单系统架构基线（T1000384）"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "architecture-baseline-written",
+      "status": "passed"
+    },
+    {
+      "checkId": "approved-requirements-verified",
+      "status": "passed"
+    },
+    {
+      "checkId": "design:application-route",
+      "status": "passed",
+      "applicationProfile": {
+        "applicationType": "simple-frontend",
+        "routeId": "compact",
+        "sha256": "sha256:611775dbde51637147d23a2dc2ab391ed18bf2bc44bc347fe31145c719501f0a",
+        "path": ".expert-team/work-items/wi-t1000384/spec-state.json#/applicationProfile"
+      }
+    }
+  ]
+}
