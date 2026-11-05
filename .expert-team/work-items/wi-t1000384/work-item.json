@@ -1,0 +1,11 @@
+{
+  "workItemId": "wi-t1000384",
+  "applicationId": "application",
+  "workItemType": "initial-build",
+  "title": "开发一个工单系统\n\n开发一个工单系统\n\nOriginal task context (user-provided facts):\n\n{\"issueId\":\"23582142663491584\",\"code\":\"T1000384\",\"title\":\"开发一个工单系统\",\"description\":\"开发一个工单系统\",\"priority\":\"normal\",\"labels\":[],\"kind\":\"requirement\",\"acceptanceCriteria\":[],\"projectName\":\"测试空间lpx\"}",
+  "request": "开发一个工单系统\n\n开发一个工单系统\n\nOriginal task context (user-provided facts):\n\n{\"issueId\":\"23582142663491584\",\"code\":\"T1000384\",\"title\":\"开发一个工单系统\",\"description\":\"开发一个工单系统\",\"priority\":\"normal\",\"labels\":[],\"kind\":\"requirement\",\"acceptanceCriteria\":[],\"projectName\":\"测试空间lpx\"}",
+  "status": "active",
+  "specId": "general-application-development-spec",
+  "revision": 0,
+  "createdAt": "2026-11-05T01:47:14.733Z"
+}

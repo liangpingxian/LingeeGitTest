@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "requirements:1",
+  "receiptType": "requirements-baseline",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "requirements",
+  "inputRevision": 0,
+  "stateVersion": 1,
+  "outcome": "passed",
+  "contentHash": "sha256:f2f78662f54675516cdce66d24e3cbdd6e7317d5c98cf34748a18995e6d6c2bf",
+  "createdAt": "2026-11-05T01:48:03.045Z",
+  "timing": {
+    "startedAt": "2026-11-05T01:47:14.848Z",
+    "completedAt": "2026-11-05T01:48:03.045Z",
+    "durationMs": 48197
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000384/requirements.md",
+      "bytes": 3623,
+      "sha256": "sha256:e3c61c6bbf5335a23051c3a2aae61f159f266428263c85fa655c016599f5d88f",
+      "role": "requirements",
+      "purpose": "工单系统需求基线：目标、核心行为规则与最小充分验收标准",
+      "title": "工单系统需求（T1000384）"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "core-goal-coverage",
+      "status": "passed"
+    },
+    {
+      "checkId": "ac-traceability",
+      "status": "passed"
+    },
+    {
+      "checkId": "source-labeling",
+      "status": "passed"
+    }
+  ]
+}
