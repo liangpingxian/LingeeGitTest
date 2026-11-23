@@ -8,8 +8,15 @@
   "workItemType": "initial-build",
   "title": "开发一个点单小程序\n\n开发一个点单小程序\n\nOriginal task context (user-provided facts):\n\n{\"issueId\":\"30185925325627392\",\"code\":\"T1000001\",\"title\":\"开发一个点单小程序\",\"description\":\"开发一个点单小程序\",\"priority\":\"normal\",\"labels\":[],\"kind\":\"feature\",\"acceptanceCriteria\":[],\"projectName\":\"开发一个点单小程序\"}",
   "request": "开发一个点单小程序\n\n开发一个点单小程序\n\nOriginal task context (user-provided facts):\n\n{\"issueId\":\"30185925325627392\",\"code\":\"T1000001\",\"title\":\"开发一个点单小程序\",\"description\":\"开发一个点单小程序\",\"priority\":\"normal\",\"labels\":[],\"kind\":\"feature\",\"acceptanceCriteria\":[],\"projectName\":\"开发一个点单小程序\"}",
-  "status": "active",
+  "status": "completed",
   "specId": "general-application-development-spec",
-  "revision": 0,
-  "createdAt": "2026-11-23T07:11:05.877Z"
+  "revision": 1,
+  "createdAt": "2026-11-23T07:11:05.877Z",
+  "completedAt": "2026-11-23T07:42:58.684Z",
+  "completion": {
+    "applicationRevision": 1,
+    "snapshotHash": "sha256:8ad6a785b04c95cd2b4d8525e2baa4a1b4a255f15b5bfb4e645eed424e8e0d6d",
+    "completedAt": "2026-11-23T07:42:58.684Z"
+  },
+  "updatedAt": "2026-11-23T07:42:58.684Z"
 }

@@ -1,0 +1,222 @@
+{
+  "decision": "pass-with-risk",
+  "summary": {
+    "objective": "对点单小程序（React+Vite+AntD 纯前端单页应用）执行独立浏览器验收：顾客浏览菜单、选择菜品并提交订单获得确认，订单在会话内（含页面刷新）持久可读回，商家查看订单明细并标记完成。",
+    "changedBehavior": "完整点单闭环在真实浏览器中验证通过：菜单渲染（8 菜品名称+价格）→ 选择与数量调整（合计 ¥40→¥58 即时更新）→ 提交生成 ORD-0001/ORD-0002 确认信息（编号、明细、合计与所选一致）→ 刷新后订单读回 → 商家查看明细并标记完成（状态可见变化、操作按钮消失、成功提示）。",
+    "nonGoals": [
+      "在线支付、菜品维护、桌号/会员/优惠券、跨浏览器/设备数据共享（需求基线第 5 节明确未纳入）",
+      "移动端视口核验（需求未指定设备形态，按桌面默认范围执行）"
+    ],
+    "riskLabels": []
+  },
+  "environment": {
+    "name": "agent_browser 预览浏览器（Chromium）访问 Vite 开发服务器",
+    "version": "vite 6.4.6（dev server，http://127.0.0.1:5173/，本轮后台作业启动）；桌面视口 1440×900",
+    "dataProfile": "内置示例菜单 8 菜品；本轮从空 localStorage 开始，提交 ORD-0001（葱油拌面×2+鲜肉小笼包×1，¥58）与 ORD-0002（上汤云吞×1，¥20）两笔测试订单，其中 ORD-0001 被标记为已完成"
+  },
+  "verification": [
+    {
+      "checkId": "QA-01",
+      "type": "browser-ui",
+      "status": "passed",
+      "plan": [
+        {
+          "requirementId": "AC-01",
+          "kind": "runtime-render",
+          "action": "顾客进入点单界面，选择至少 2 个菜品并调整其中 1 个的数量。",
+          "expected": "菜品列表展示名称与价格；所选菜品、数量与合计金额（单价×数量之和）正确显示，并随调整即时更新。"
+        },
+        {
+          "requirementId": "AC-01",
+          "kind": "interaction",
+          "action": "顾客进入点单界面，选择至少 2 个菜品并调整其中 1 个的数量。",
+          "expected": "菜品列表展示名称与价格；所选菜品、数量与合计金额（单价×数量之和）正确显示，并随调整即时更新。"
+        }
+      ],
+      "evidence": "浏览器实际操作验证：菜单渲染 8 个菜品（名称+价格）；加入 2 个菜品后汇总与合计 ¥40 正确；数量 +1 后同一批次读取立即显示 ¥18 × 2 与合计 ¥58，即时更新成立。",
+      "testStrategy": {
+        "traits": [],
+        "mode": "direct",
+        "maxAttempts": 2
+      },
+      "observation": {
+        "method": "browser",
+        "actor": "expert",
+        "reference": "agent_browser 预览会话 lingee-preview-16-e295f440135bb1fa @ http://127.0.0.1:5173/：get text body（菜单 8 菜品名称与价格）；batch click @e5(葱油拌面)+@e6(鲜肉小笼包) + get text body（我的点单：¥18 × 1、¥22 × 1、合计金额 ¥40）；batch click @e16(增加数量) + get text body（¥18 × 2、合计金额 ¥58）"
+      },
+      "assertions": [
+        {
+          "requirementId": "AC-01",
+          "kind": "runtime-render",
+          "action": "顾客进入点单界面，选择至少 2 个菜品并调整其中 1 个的数量。",
+          "expected": "菜品列表展示名称与价格；所选菜品、数量与合计金额（单价×数量之和）正确显示，并随调整即时更新。",
+          "actual": "进入点单界面（http://127.0.0.1:5173/），菜单区渲染 8 个菜品卡片，每个菜品展示名称与价格：葱油拌面¥18、鲜肉小笼包¥22、招牌牛肉面¥32、黄金咖喱鸡饭¥28、梅菜扣肉饭¥26、上汤云吞¥20、冰镇柠檬茶¥12、杨枝甘露¥15，头部显示「菜单 共 8 个菜品」。",
+          "status": "passed"
+        },
+        {
+          "requirementId": "AC-01",
+          "kind": "interaction",
+          "action": "顾客进入点单界面，选择至少 2 个菜品并调整其中 1 个的数量。",
+          "expected": "菜品列表展示名称与价格；所选菜品、数量与合计金额（单价×数量之和）正确显示，并随调整即时更新。",
+          "actual": "点击加入葱油拌面与鲜肉小笼包后，「我的点单」显示两行所选（葱油拌面 ¥18 × 1、鲜肉小笼包 ¥22 × 1）与合计金额 ¥40；点击菜单卡「增加数量」将葱油拌面增至 2 后，同一批次读取立即显示「¥18 × 2」与合计金额 ¥58（18×2+22），汇总随调整即时更新。",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "checkId": "QA-02",
+      "type": "browser-ui",
+      "status": "passed",
+      "plan": [
+        {
+          "requirementId": "AC-02",
+          "kind": "interaction",
+          "action": "顾客完成菜品选择后提交点单。",
+          "expected": "出现订单确认信息，含唯一订单编号、所点菜品明细（名称、数量、单价）与合计金额，且与提交前所选内容一致。"
+        },
+        {
+          "requirementId": "AC-02",
+          "kind": "session-persistence",
+          "action": "顾客完成菜品选择后提交点单。",
+          "expected": "出现订单确认信息，含唯一订单编号、所点菜品明细（名称、数量、单价）与合计金额，且与提交前所选内容一致。"
+        }
+      ],
+      "evidence": "提交点单后确认弹窗含唯一订单编号 ORD-0001、明细与合计 ¥58，与提交前所选一致；刷新页面后订单在「订单管理」可读回；第二笔订单编号 ORD-0002，编号唯一且单调递增。",
+      "testStrategy": {
+        "traits": [],
+        "mode": "direct",
+        "maxAttempts": 2
+      },
+      "observation": {
+        "method": "browser",
+        "actor": "expert",
+        "reference": "agent_browser 预览会话 lingee-preview-16-e295f440135bb1fa @ http://127.0.0.1:5173/：batch is enabled @e13 + click @e13(提交点单) + get text body（点单已提交：订单编号 ORD-0001、合计 ¥58、明细表）；open http://127.0.0.1:5173/ 刷新后 click @e51(订单管理) + get text body（列表含 ORD-0001）；batch click @e103 + is enabled @e106 + click @e106 + get text body（第二笔订单 ORD-0002）"
+      },
+      "assertions": [
+        {
+          "requirementId": "AC-02",
+          "kind": "interaction",
+          "action": "顾客完成菜品选择后提交点单。",
+          "expected": "出现订单确认信息，含唯一订单编号、所点菜品明细（名称、数量、单价）与合计金额，且与提交前所选内容一致。",
+          "actual": "提交点单（提交按钮 is enabled = true）后出现「点单已提交」确认弹窗：订单编号 ORD-0001；明细表（菜品名称/数量/单价/小计）为葱油拌面 2 ¥18 ¥36、鲜肉小笼包 1 ¥22 ¥22；合计金额 ¥58，与提交前所选内容（2×¥18+1×¥22）一致。追加第二笔订单后编号为 ORD-0002（上汤云吞 1 ¥20 ¥20、合计 ¥20），与第一笔不同且单调递增，编号唯一性成立。",
+          "status": "passed"
+        },
+        {
+          "requirementId": "AC-02",
+          "kind": "session-persistence",
+          "action": "顾客完成菜品选择后提交点单。",
+          "expected": "出现订单确认信息，含唯一订单编号、所点菜品明细（名称、数量、单价）与合计金额，且与提交前所选内容一致。",
+          "actual": "提交 ORD-0001 并点击「继续点单」关闭弹窗后刷新页面（重新加载 http://127.0.0.1:5173/，购物车清空回到初始状态），切换到「订单管理」，ORD-0001 仍在订单列表中（菜品数 3、合计金额 ¥58、状态未完成、提交时间 2026-11-23 15:37:23），订单在当前会话内含页面刷新后可读回。",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "checkId": "QA-03",
+      "type": "browser-ui",
+      "status": "passed",
+      "plan": [
+        {
+          "requirementId": "AC-03",
+          "kind": "runtime-render",
+          "action": "顾客提交订单后，商家打开订单界面，查看该订单并标记为已完成。",
+          "expected": "订单列表包含该订单，其编号与菜品明细可查看；标记后该订单状态显示为已完成。"
+        },
+        {
+          "requirementId": "AC-03",
+          "kind": "interaction",
+          "action": "顾客提交订单后，商家打开订单界面，查看该订单并标记为已完成。",
+          "expected": "订单列表包含该订单，其编号与菜品明细可查看；标记后该订单状态显示为已完成。"
+        }
+      ],
+      "evidence": "刷新后商家订单列表包含 ORD-0001 且明细可查看；点击「标记为已完成」并确认后，列表与抽屉状态均变为「已完成」，操作按钮消失并出现成功提示，状态可见变化。",
+      "testStrategy": {
+        "traits": [],
+        "mode": "direct",
+        "maxAttempts": 2
+      },
+      "observation": {
+        "method": "browser",
+        "actor": "expert",
+        "reference": "agent_browser 预览会话 lingee-preview-16-e295f440135bb1fa @ http://127.0.0.1:5173/：刷新后 click @e51(订单管理) + get text body（订单列表含 ORD-0001 行）；batch click @e76(详情) + get text body（订单明细 · ORD-0001 抽屉）；batch click @e80(标记为已完成) + get text body（确认弹窗「确认将该订单标记为已完成？」）；batch click @e96(标记完成) + get text body（列表状态已完成 + 提示「订单 ORD-0001 已标记为已完成」）"
+      },
+      "assertions": [
+        {
+          "requirementId": "AC-03",
+          "kind": "runtime-render",
+          "action": "顾客提交订单后，商家打开订单界面，查看该订单并标记为已完成。",
+          "expected": "订单列表包含该订单，其编号与菜品明细可查看；标记后该订单状态显示为已完成。",
+          "actual": "刷新页面后切换「订单管理」，订单列表（订单编号/菜品数/合计金额/状态/提交时间/操作 6 列，无横向溢出）包含 ORD-0001 行（3、¥58、未完成、2026-11-23 15:37:23）；点击「详情」打开明细抽屉，显示「订单明细 · ORD-0001」、状态、提交时间与菜品明细（葱油拌面 2 ¥18 ¥36、鲜肉小笼包 1 ¥22 ¥22）及合计金额 ¥58，编号与明细均可查看。",
+          "status": "passed"
+        },
+        {
+          "requirementId": "AC-03",
+          "kind": "interaction",
+          "action": "顾客提交订单后，商家打开订单界面，查看该订单并标记为已完成。",
+          "expected": "订单列表包含该订单，其编号与菜品明细可查看；标记后该订单状态显示为已完成。",
+          "actual": "在明细抽屉点击「标记为已完成」，确认弹窗点击「标记完成」后：列表行状态由「未完成」变为「已完成」，抽屉状态同步为「已完成」，出现提示「订单 ORD-0001 已标记为已完成」，且该订单行的「标记完成」操作按钮消失，状态变化在界面上可见。",
+          "status": "passed"
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "acceptance": "AC-01: 顾客能浏览菜品列表（含名称与价格），将菜品加入点单、增减数量，并看到所选内容与合计金额正确更新。; AC-02: 顾客提交点单后获得包含订单编号和菜品明细的订单确认。; AC-03: 商家能查看顾客提交的订单列表与明细，并将订单标记为已完成。",
+    "mandatoryAcceptance": [
+      {
+        "id": "AC-01",
+        "source": "requirements.md#AC-01",
+        "surface": "user-interface",
+        "status": "met",
+        "checkIds": [
+          "QA-01"
+        ],
+        "evidenceKinds": [
+          "runtime-render",
+          "interaction"
+        ],
+        "evidence": "QA-01 两项计划断言通过：菜单列表展示名称与价格；选择 2 个菜品、调整 1 个数量后，所选内容与合计金额（¥40→¥58）随调整即时更新。"
+      },
+      {
+        "id": "AC-02",
+        "source": "requirements.md#AC-02",
+        "surface": "user-interface",
+        "status": "met",
+        "checkIds": [
+          "QA-02"
+        ],
+        "evidenceKinds": [
+          "interaction",
+          "session-persistence"
+        ],
+        "evidence": "QA-02 两项计划断言通过：提交后确认弹窗含唯一订单编号（ORD-0001，第二笔 ORD-0002 佐证唯一递增）、菜品明细（名称/数量/单价）与合计金额 ¥58，与提交前所选一致；刷新后订单在会话内可读回。"
+      },
+      {
+        "id": "AC-03",
+        "source": "requirements.md#AC-03",
+        "surface": "user-interface",
+        "status": "met",
+        "checkIds": [
+          "QA-03"
+        ],
+        "evidenceKinds": [
+          "runtime-render",
+          "interaction"
+        ],
+        "evidence": "QA-03 两项计划断言通过：刷新后商家订单列表包含该订单且明细可查看；标记为已完成并确认后，列表与明细状态均可见地变为「已完成」。"
+      }
+    ],
+    "riskLabels": [],
+    "verificationTypes": [
+      "browser-ui"
+    ]
+  },
+  "defects": [],
+  "skippedChecks": [],
+  "residualRisks": [
+    "视觉外观未做目视截图核验（本会话为文本模型，无法查看截图）；已用结构快照、文本读取与 computed style 替代核对：浅色背景 rgb(247,247,250)、主操作按钮主色 #315fe8、两个视图样式一致、订单表格 6 列无横向溢出。",
+    "订单编号唯一性在单一浏览器数据生命周期内验证（ORD-0001→ORD-0002 递增）；跨浏览器/设备唯一性按架构基线不在验证范围。"
+  ],
+  "baselineUpdates": [],
+  "testStrategyVersion": 1
+}
