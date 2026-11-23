@@ -2,17 +2,18 @@
   "schemaVersion": 2,
   "specId": "general-application-development-spec",
   "specRevision": 16,
-  "state": "design_ready",
-  "revision": 2,
+  "state": "implementation_ready",
+  "revision": 3,
   "completedActions": [
     "requirements",
-    "design"
+    "design",
+    "implementation"
   ],
   "blockers": [],
   "scenarioId": "feature",
   "graphRevision": 5,
   "graphHash": "sha256:42bd6d37da9094899648e92d79bc2e77cd7eb268c0c1fe51a881c97cce967f3b",
-  "updatedAt": "2026-11-23T07:17:09.860Z",
+  "updatedAt": "2026-11-23T07:24:45.435Z",
   "applicationProfile": {
     "schemaVersion": 1,
     "applicationType": "simple-frontend",
