@@ -2,14 +2,46 @@
   "schemaVersion": 2,
   "specId": "general-application-development-spec",
   "specRevision": 16,
-  "state": "requirements_ready",
-  "revision": 1,
+  "state": "design_ready",
+  "revision": 2,
   "completedActions": [
-    "requirements"
+    "requirements",
+    "design"
   ],
   "blockers": [],
   "scenarioId": "feature",
   "graphRevision": 5,
   "graphHash": "sha256:42bd6d37da9094899648e92d79bc2e77cd7eb268c0c1fe51a881c97cce967f3b",
-  "updatedAt": "2026-11-23T07:13:19.810Z"
+  "updatedAt": "2026-11-23T07:17:09.860Z",
+  "applicationProfile": {
+    "schemaVersion": 1,
+    "applicationType": "simple-frontend",
+    "source": {
+      "artifactPath": "docs/wi-t1000001/requirements.md",
+      "sha256": "sha256:8915fc24774864692e35333d7deebfaecec7d40ae82350d770677409fd4b3a20"
+    },
+    "reason": "已批准需求快照的全部行为均为用户界面交互：顾客浏览菜单、选择菜品、提交订单，商家查看订单并标记完成。订单读回边界被需求明确限定为『当前使用会话中（含页面刷新）』（R4 与第5节），跨重启或部署的长期持久性明确未规定；菜单使用内置示例数据；需求无认证/权限、在线支付、外部服务集成或后台任务条目。全部 AC 的证据类型（runtime-render、interaction、session-persistence）均为浏览器能力。因此无服务器、权威数据库、认证、后台工作、外部集成与跨设备共享数据的必要，选择 simple-frontend 路线，使用浏览器 localStorage 承载会话级订单数据。",
+    "evidence": {
+      "supporting": [
+        "R4：订单在『当前使用会话中（含页面刷新）』可通过商家侧界面读回，且『跨重启或部署的长期持久性未规定』——仅需会话级持久化",
+        "第5节：『仅要求会话内含页面刷新可读回』，跨设备、跨浏览器、跨用户同步未要求",
+        "AC-02 证据类型为 session-persistence；三个 AC 入口类型均为用户界面，证据类型为 runtime-render/interaction/session-persistence——纯浏览器可验证",
+        "菜单数据为内置示例数据，不要求菜品维护（第3节）——无服务端权威数据源",
+        "无认证/权限条目（第2节角色仅定义职责，无登录或鉴权要求）；无在线支付（第5节未纳入）；无后台任务或外部服务集成",
+        "第2节：『用户未指定产品载体或设备形态，本基线不对其做出规定』——未要求物理分离的多设备形态"
+      ],
+      "excluding": [
+        "服务端权威数据：菜单为内置示例数据，订单仅需会话内读回（R4），无需服务端存储",
+        "认证/权限：需求快照无任何登录、鉴权、角色权限条目",
+        "后台任务：无订单通知、超时处理等后台工作条目",
+        "外部服务集成：在线支付在第5节明确未纳入",
+        "跨用户/设备共享的明确要求：R4 与第5节将订单读回范围限定为当前使用会话（含页面刷新），未要求跨设备/跨浏览器/跨用户同步"
+      ],
+      "unresolved": [
+        "顾客与商家界面的物理载体形态未规定（同一设备内两个界面视图或分离设备）；本设计按同一浏览器会话内两个界面视图承载，此保守假设可被用户纠正"
+      ]
+    },
+    "decidedAt": "2026-11-23T07:15:48.053Z",
+    "sha256": "sha256:bf51673e43df94c884c1ecf7da5df448e1c1ca58cb9225e4c30ecf7281528927"
+  }
 }

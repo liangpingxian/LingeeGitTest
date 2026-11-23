@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "design:2",
+  "receiptType": "architecture-plan",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "design",
+  "inputRevision": 1,
+  "stateVersion": 2,
+  "outcome": "passed",
+  "contentHash": "sha256:d647b0dd41446a518d502a340f33275f8cb65c6587b3bd5c0c44e66cd401a685",
+  "createdAt": "2026-11-23T07:17:09.860Z",
+  "timing": {
+    "startedAt": "2026-11-23T07:14:38.102Z",
+    "completedAt": "2026-11-23T07:17:09.860Z",
+    "durationMs": 151758
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000001/architecture-baseline.md",
+      "bytes": 3178,
+      "sha256": "sha256:30919e330458c6abcda5c7507d944d56ce371381505183e64033deb697333170",
+      "title": "点单小程序 · 架构基线"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "artifact-written",
+      "status": "passed"
+    },
+    {
+      "checkId": "design:application-route",
+      "status": "passed",
+      "applicationProfile": {
+        "applicationType": "simple-frontend",
+        "routeId": "compact",
+        "sha256": "sha256:bf51673e43df94c884c1ecf7da5df448e1c1ca58cb9225e4c30ecf7281528927",
+        "path": ".expert-team/work-items/wi-t1000001/spec-state.json#/applicationProfile"
+      }
+    }
+  ]
+}
