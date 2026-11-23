@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "requirements:1",
+  "receiptType": "requirements-baseline",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "requirements",
+  "inputRevision": 0,
+  "stateVersion": 1,
+  "outcome": "passed",
+  "contentHash": "sha256:e904caf224f387a39c7b976856f91eac23d086670a1758928563aa9a234b57f2",
+  "createdAt": "2026-11-23T07:13:19.810Z",
+  "timing": {
+    "startedAt": "2026-11-23T07:11:05.961Z",
+    "completedAt": "2026-11-23T07:13:19.810Z",
+    "durationMs": 133849
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000001/requirements.md",
+      "bytes": 4392,
+      "sha256": "sha256:8915fc24774864692e35333d7deebfaecec7d40ae82350d770677409fd4b3a20",
+      "title": "点单小程序需求"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "artifact-created",
+      "status": "passed"
+    },
+    {
+      "checkId": "ac-field-completeness",
+      "status": "passed"
+    },
+    {
+      "checkId": "source-separation",
+      "status": "passed"
+    },
+    {
+      "checkId": "core-goal-coverage",
+      "status": "passed"
+    }
+  ]
+}
